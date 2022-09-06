@@ -1,0 +1,13 @@
+@import "Assets/sass/Color.scss";
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bg-color;
+    font-family: "Abel", sans-serif;
+}

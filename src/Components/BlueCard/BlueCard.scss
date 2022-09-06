@@ -1,0 +1,119 @@
+@import "../../Assets/sass/Color.scss";
+
+.card-Blue {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5rem 26rem;
+    background-color: $card-color;
+    width: 29rem;
+    height: 17rem;
+    padding: 2rem 0rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0.625rem 0.625rem 0.5rem rgba($color: $dark_color, $alpha: 0.1);
+
+    h1 {
+        text-align: center;
+    }
+    h5 {
+        margin-top: 4rem;
+        margin-left: 6rem;
+    }
+    p {
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+    span {
+        background-color: rgba($color: #333333, $alpha: 0.3);
+        color: $light_color;
+        border-radius: 10px;
+        padding: 0.2rem 1rem;
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+    &:hover {
+        cursor: pointer;
+        width: 29rem;
+        height: 17rem;
+        background-color: $bg-card__blue;
+
+        h1 {
+            width: 10rem;
+            color: $text-card__blue;
+            position: relative;
+            top: -5.5rem;
+            left: 3rem;
+        }
+        p,
+        h5 {
+            display: none;
+        }
+        .detail {
+            display: flex;
+            position: absolute;
+            left: 36rem;
+            top: 30rem;
+            color: $text-card__blue;
+        }
+        .information {
+            margin: 1.5rem;
+        }
+        .badge {
+            color: $text-card__blue;
+            display: flex;
+        }
+        .badge-trophy {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            position: relative;
+            top: 5rem;
+            left: -10rem;
+        }
+        .badge-game {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            top: 5rem;
+            left: -8rem;
+        }
+        .badge-group {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            top: 5rem;
+            left: -6rem;
+        }
+        .badge-coffe {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            top: 5rem;
+            left: -4rem;
+        }
+        i {
+            font-size: 2rem;
+        }
+    }
+}
+
+.img-Blue {
+    width: 10rem;
+    height: 17rem;
+    display: flex;
+    align-items: center;
+    background-color: $bg-card__blue;
+    margin-right: 1rem;
+    padding: 4rem 0rem;
+    border-top-left-radius: 0.3125rem;
+    border-bottom-left-radius: 0.3125rem;
+}
+
+.detail,
+.badge {
+    display: none;
+}
